@@ -77,6 +77,7 @@ abstract class AbstractRequest extends \Omnipay\Common\Message\AbstractRequest
     {
         $data = array();
         $data['ssl_amount'] = $this->getAmount();
+        $data['ssl_transaction_currency'] = $this->getCurrency();
         $data['ssl_invoice_number'] = $this->getDescription();
 
         if ($card = $this->getCard()) {
