@@ -1,5 +1,5 @@
 {
-    "name": "zburke/omnipay-virtualmerchant",
+    "name": "eXolnet/omnipay-virtualmerchant",
     "type": "library",
     "description": "Elavon VirtualMerchant gateway for the Omnipay payment processing library",
     "keywords": [
