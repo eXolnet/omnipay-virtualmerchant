@@ -80,4 +80,14 @@ class Response extends AbstractResponse
     {
         return isset($this->data[$key]) ? $this->data[$key] : '';
     }
+
+	public function hasDccDescision()
+	{
+		return isset($this->data['ssl_txn_currency_code']);
+	}
+
+	public function getApprovalCode()
+	{
+		return $this->value_for('ssl_approval_code');
+	}
 }

@@ -92,4 +92,9 @@ class Gateway extends AbstractGateway
         return $this->createRequest('\Omnipay\VirtualMerchant\Message\VoidRequest', $parameters);
     }
 
+	public function deauthorize(array $parameters = array())
+	{
+		return $this->createRequest('\Omnipay\VirtualMerchant\Message\DeAuthorizeRequest', $parameters);
+	}
+
 }
